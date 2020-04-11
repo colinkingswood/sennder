@@ -1,0 +1,16 @@
+I noticed when developing this that there were a number of films that didn't have corresponding entries in teh people endpoint.
+Under normal circumstances i would ask what the preferred option would be in this case. FDor just now I added a string "Unknown" to the output.
+
+Testing is a large topic and it would be easy to add way more than what I did.
+For the time being I wanted to test the cache refresh option, which was a bit trickier than I expected.
+
+I added a timestamp "last_refreshed" to the context data returned from the view in order to check if the data had been had changed (you can see this a the bottom of the list).
+It worked while manually testing but when retrieving from cache the context data wasn't added to the response object in the test, so I used a lack of context object to infer that the cached copy was being used. The context data gets added after 60 seconds when teh cache is refreshed.
+
+Other tests that could be added - it would be nice to add some mock endpoints that change between requests but it would be a relatively time consuming task to set these up.
+
+Another test could be to refactor the logic for matching films and people into a separate function with data as parameters, then set up data to check if teh output is as expected. Again this would take as much time as writing teh code itself.
+
+I added some todos in the code to handle errors if the call to the endpoints don't return a valid response.
+
+
