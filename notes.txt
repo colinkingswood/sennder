@@ -13,5 +13,5 @@ Another test could be to refactor the logic for matching films and people into a
 
 I added some "todos" in the code where to to handle errors if the call to the endpoints don't return a valid response, for teh time being I assume that they will work correctly.
 
-At present it just uses Djangos in memory caching. For a production application, setting up memcahced or Reddis may  be a better option. Also Django's development server isn't recommended for production use.
+At present it just uses Djangos in memory caching. For a production application, setting up memcached or Reddis may  be a better option. Also Django's development server isn't recommended for production use.
 

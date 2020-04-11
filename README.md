@@ -26,3 +26,8 @@ start the development server
 
 Then you should be able to see the move list at:
 http://127.0.0.1:8000/movies/
+
+
+To run the tests use (the test checks the caching functionality, so takes 63 seconds to run on my machine):
+> python manage.py test movielist
+
