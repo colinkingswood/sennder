@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies list</title>
+</head>
+<body>
+    {% for movie in movie_list %}
+        <h2>{{ movie.title }}</h2>
+        {% for person in movie.people %}
+            <div>{{ person }}</div>
+        {% endfor %}
+    {% endfor %}
+    <div>movie list generated at {{last_refresh|date:"H:i:s"}}</div>
+</body>
+</html>
