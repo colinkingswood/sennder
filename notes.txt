@@ -11,6 +11,6 @@ Other tests that could be added - it would be nice to add some mock endpoints th
 
 Another test could be to refactor the logic for matching films and people into a separate function with data as parameters, then set up data to check if teh output is as expected. Again this would take as much time as writing teh code itself.
 
-I added some todos in the code to handle errors if the call to the endpoints don't return a valid response.
+I added some "todos" in the code where to to handle errors if the call to the endpoints don't return a valid response, for teh time being I assume that they will work correctly.
 
 
