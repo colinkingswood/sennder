@@ -12,9 +12,10 @@ activate the vitural environment
 > . sender_venv/bin/activate
 
 Download the repository. 
-'cd'  to the top level sennder folder, the same place where manage.py is lcoated
+'cd'  to the top level sennder folder, the same place where manage.py is located
+> cd sennder
 
-install the dependencies
+install the dependencies into our virtual environment
 > pip install -r requirements.txt
 
 Optionally set the django setting moudle with (the default settings module should work): 
